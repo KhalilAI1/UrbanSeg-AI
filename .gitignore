@@ -1,0 +1,22 @@
+# Data
+data/
+
+# Model Weights + Results
+outputs/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# OS Files
+.DS_Store
+Thumbs.db
