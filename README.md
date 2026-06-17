@@ -47,11 +47,27 @@ Trained for 20 epochs on PASCAL VOC 2012 (3-class subset):
 ## Demo Screenshots
 ![Demo Screenshots](outputs/results/image.png)
 ### Person Segmentation
-![Person Segmentation](outputs/results/overlay_khalil.png)
-
+<table>
+  <tr>
+    <td><img src="outputs/results/khalil.jpg" width="400"/></td>
+    <td><img src="outputs/results/overlay_khalil.png" width="400"/></td>
+  </tr>
+  <tr>
+    <td align="center">Original</td>
+    <td align="center">Segmentation</td>
+  </tr>
+</table>
 ### Vehicle Segmentation  
-![Vehicle Segmentation](outputs/results/drone_overlay.png)
-
+<table>
+  <tr>
+    <td><img src="outputs/results/Drone.jpg" width="400"/></td>
+    <td><img src="outputs/results/drone_overlay.png" width="400"/></td>
+  </tr>
+  <tr>
+    <td align="center">Original</td>
+    <td align="center">Segmentation</td>
+  </tr>
+</table>
 
 ---
 
