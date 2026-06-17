@@ -1,0 +1,43 @@
+project:
+  name: UrbanSeg-AI
+  version: "1.0"
+
+data:
+  dataset: PASCAL_VOC
+  train_images: data\row\train_images
+  train_masks: data\row\train_labels
+  val_images: data\row\valid_images
+  val_masks: data\row\valid_labels
+  img_size: 512
+  train_split: 0.70
+  val_split: 0.15
+  test_split: 0.15
+  num_classes: 3
+  classes: ["background", "person", "vehicle"]
+  vehicle_ids: [2, 4, 6, 7, 14, 19, 1]  # IDs for aeroplane, bicycle, bus, car, motorbike, train, and boat
+
+model:
+  name: deeplabv3plus_resnet50
+  pretrained: true
+
+training:
+  epochs: 50
+  batch_size: 4
+  lr:
+    lr_backbone: 0.0001  
+    lr_head: 0.01        
+  device: cuda
+  loss: cross_entropy
+  
+  scheduler:
+    name: cosine
+    min_lr: 0.0001
+
+  early_stopping:
+    patience: 10
+    monitor: val_miou
+
+checkpoint:
+  save_dir: outputs/weights/
+  save_best_only: true
+  monitor: val_miou
