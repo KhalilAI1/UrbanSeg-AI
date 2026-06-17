@@ -1,4 +1,9 @@
 # UrbanSeg AI 🚗🧍✈️
+[![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)](https://python.org)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0-red?logo=pytorch)](https://pytorch.org)
+[![HuggingFace](https://img.shields.io/badge/Model-HuggingFace-yellow?logo=huggingface)](https://huggingface.co/YOUR_USERNAME/UrbanSeg-AI)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![mIoU](https://img.shields.io/badge/mIoU-86.21%25-brightgreen)]()
 
 A semantic segmentation system for urban scene understanding, built with PyTorch and DeepLabV3+.
 
@@ -49,8 +54,8 @@ Trained for 20 epochs on PASCAL VOC 2012 (3-class subset):
 ### Person Segmentation
 <table>
   <tr>
-    <td><img src="outputs/results/khalil.jpg" width="400"/></td>
-    <td><img src="outputs/results/overlay_khalil.png" width="400"/></td>
+    <td><img src="outputs/results/2007_005173.jpg" width="400"/></td>
+    <td><img src="outputs/results/overlay.png" width="400"/></td>
   </tr>
   <tr>
     <td align="center">Original</td>
@@ -68,6 +73,24 @@ Trained for 20 epochs on PASCAL VOC 2012 (3-class subset):
     <td align="center">Segmentation</td>
   </tr>
 </table>
+
+---
+
+## Pretrained Model
+
+Download the pretrained model directly from HuggingFace Hub:
+
+```bash
+from huggingface_hub import hf_hub_download
+
+model_path = hf_hub_download(
+    repo_id="Khalil200383/UrbanSeg-AI",
+    filename="best_model.pth"
+)
+```
+
+Or via the direct link:
+[HuggingFace — UrbanSeg-AI](https://huggingface.co/Khalil200383/UrbanSeg-AI)
 
 ---
 

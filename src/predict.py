@@ -63,11 +63,11 @@ if __name__ == "__main__":
     model.to(device)
     model.load_state_dict(torch.load("outputs/weights/best_model.pth", map_location=device))
     # Predict the mask for the test image
-    predicted_mask = predict_mask("outputs/results/Drone.jpg", model, device)
+    predicted_mask = predict_mask("outputs\\results\\2007_005173.jpg", model, device)
     # Create an overlay of the original image and the predicted mask
-    overlay_image = overly(Image.open("outputs/results/Drone.jpg").convert("RGB"), predicted_mask)
-    overlay_image.save("outputs/results/drone_overlay.png")
+    overlay_image = overly(Image.open("outputs\\results\\2007_005173.jpg").convert("RGB"), predicted_mask)
+    overlay_image.save("outputs/results/overlay.png")
     # Save the colorized mask
     color_mask = colorize_mask(predicted_mask)
     result_image = Image.fromarray(color_mask)
-    result_image.save("outputs/results/drone_mask.png")
+    result_image.save("outputs/results/mask.png")
