@@ -62,7 +62,9 @@ Trained for 20 epochs on PASCAL VOC 2012 (3-class subset):
     <td align="center">Segmentation</td>
   </tr>
 </table>
+
 ### Vehicle Segmentation  
+
 <table>
   <tr>
     <td><img src="outputs/results/Drone.jpg" width="400"/></td>
