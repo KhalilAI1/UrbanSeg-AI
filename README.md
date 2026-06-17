@@ -45,12 +45,12 @@ Trained for 20 epochs on PASCAL VOC 2012 (3-class subset):
 | **mIoU** | **0.8621** |
 
 ## Demo Screenshots
-![Demo Screenshots](outputs\results\image.png)
+![Demo Screenshots](outputs/results/image.png)
 ### Person Segmentation
-![Person Segmentation](outputs\results\overlay_khalil.png)
+![Person Segmentation](outputs/results/overlay_khalil.png)
 
 ### Vehicle Segmentation  
-![Vehicle Segmentation](outputs\results\drone_overlay.png)
+![Vehicle Segmentation](outputs/results/drone_overlay.png)
 
 
 ---

@@ -3,7 +3,7 @@ data/
 
 # Model Weights + Results
 outputs/weights/
-!outputs/results/
+
 
 # Python Cache
 __pycache__/
